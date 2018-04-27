@@ -5,6 +5,8 @@ using UnityEngine;
 public class InventoryUI : MonoBehaviour {
 
     public Transform itemsParent;
+    [SerializeField]
+    public GameObject inventoryUI;
 
     InventorySlot[] slots;
 
@@ -18,7 +20,16 @@ public class InventoryUI : MonoBehaviour {
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
 
 	}
-	
+
+    private void Update()
+    {
+        if(Input.GetButtonDown("Inventory"))
+        {
+            Debug.Log("Inventory button");
+            inventoryUI.SetActive(!inventoryUI.activeSelf);
+        }
+    }
+
     void UpdateUI()
     {
         for (int i = 0; i < slots.Length; i++)

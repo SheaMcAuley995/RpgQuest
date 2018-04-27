@@ -30,7 +30,6 @@ public class InventorySlot : MonoBehaviour {
 
     public void onRemoveButton()
     {
-
         Inventory.instance.Remove(item);
     }
 
