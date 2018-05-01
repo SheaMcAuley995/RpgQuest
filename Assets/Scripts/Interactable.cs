@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum InteractType {Collision , Interact, Both }
+
+
 public class Interactable : MonoBehaviour {
 
     public float radius = 3f;
@@ -10,10 +13,9 @@ public class Interactable : MonoBehaviour {
     bool isFocus = false;
     Transform player;
 
-
+    public InteractType interactType;
 
     bool hasInteracted = false;
-
     public virtual void Interact ()
     {
         Debug.Log("Interacting with " + transform.name);
@@ -56,4 +58,5 @@ public class Interactable : MonoBehaviour {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(interactionTransform.position, radius);
     }
+
 }
