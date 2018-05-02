@@ -33,9 +33,9 @@ public class EnemyController : MonoBehaviour {
 
                 if(targetStats != null)
                 {
-
+                    combat.Attack(targetStats);
                 }
-  //              combat.Attack();
+                
                 FaceTarget();
             }
         }

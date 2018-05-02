@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/SceneSave.unity
+    guid: 9c0ac4ddd92a86946b3d23f7f9e91e21
+  - enabled: 1
+    path: Assets/DungeonScene.unity
+    guid: 1a088dc79d2c8fe4a8b08c92a69449fb

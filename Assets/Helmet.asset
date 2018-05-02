@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4583f58fa348844cb2b76f09acdede4, type: 3}
   m_Name: Helmet
   m_EditorClassIdentifier: 
-  name: New Item
+  name: Sword Of Hurting
   icon: {fileID: 0}
   isDefaultItem: 0
   equipSlot: 0
