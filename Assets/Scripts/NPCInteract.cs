@@ -13,7 +13,7 @@ public class NPCInteract : Interactable {
 
     IEnumerator LookAtTarget(Transform target)
     {
-        GetComponent<Transform>().LookAt(target);
+        GetComponent<Transform>().LookAt(new Vector3(0, target.position.y,0));
         yield return null;
     }
 }

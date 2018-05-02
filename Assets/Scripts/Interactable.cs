@@ -13,11 +13,8 @@ public class Interactable : MonoBehaviour {
     bool isFocus = false;
     Transform player;
 
-<<<<<<< HEAD
     public InteractType interactType;
 
-=======
->>>>>>> 2d540326b4e897daf6d6d411b305a49cc6f9d8c0
     bool hasInteracted = false;
     public virtual void Interact ()
     {

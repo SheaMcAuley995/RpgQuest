@@ -9,7 +9,7 @@ public class EnterenceInteract : Interactable {
 
     public override void Interact()
     {
-        //LevelLoader.instance.LoadLevel(LevelName);
+        LevelLoader.instance.LoadLevel(LevelName);
         base.Interact();
     }
 
